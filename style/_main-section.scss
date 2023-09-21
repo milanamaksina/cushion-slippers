@@ -1,0 +1,68 @@
+@import "variables";
+
+.black-slippers {
+    width: 100%;
+}
+
+.main-section-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 19px 0;
+    gap: 10px;
+    background-color: $color-pink;
+    font-size: 13px;
+}
+
+.main-section {
+    position: relative;
+}
+
+.chip {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    text-transform: uppercase;
+    bottom: 14px;
+    padding: 9px 7px;
+    gap: 10px;
+    font-weight: 700;
+    color: $color-white;
+}
+
+.timer-container {
+    left: 13px;
+    background-color: $color-orange;
+    border-radius: 7px;
+}
+
+.price {
+    right: 13px;
+    background-color: $color-green;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.chip-big-text {
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+}
+
+.old-price {
+    position: relative;
+}
+
+.line {
+    position: absolute;
+    width: 80%;
+    height: 3.5px;
+    background-color: $color-orange;
+    bottom: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}

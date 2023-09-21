@@ -1,0 +1,212 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F19D2F;
+  font-size: 12px;
+  gap: 5px;
+  padding: 10px 14px;
+}
+
+header img {
+  width: 12px;
+  height: 12px;
+}
+
+.black-slippers {
+  width: 100%;
+}
+
+.main-section-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 19px 0;
+  gap: 10px;
+  background-color: #FFD1AC;
+  font-size: 13px;
+}
+
+.main-section {
+  position: relative;
+}
+
+.chip {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  text-transform: uppercase;
+  bottom: 14px;
+  padding: 9px 7px;
+  gap: 10px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.timer-container {
+  left: 13px;
+  background-color: #F19D2F;
+  border-radius: 7px;
+}
+
+.price {
+  right: 13px;
+  background-color: #37D997;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.chip-big-text {
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+}
+
+.old-price {
+  position: relative;
+}
+
+.line {
+  position: absolute;
+  width: 80%;
+  height: 3.5px;
+  background-color: #F19D2F;
+  bottom: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
+
+.goods-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 11px 16px 41px 16px;
+  background-color: #F0F0F0;
+}
+
+.goods-valuation {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.goods-best-selling {
+  color: #37D997;
+  text-decoration: underline;
+}
+
+.goods-name {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.goods-description {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  gap: 12px;
+}
+
+.goods-stock-delivery {
+  font-weight: 700;
+}
+
+.goods-comments-count {
+  padding-left: 10px;
+}
+
+.selection-size-color {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.input-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.input-group select {
+  border-radius: 15px;
+  border: none;
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url("../assets/arrow.svg") no-repeat right center;
+  background-size: 19px;
+  background-position: calc(100% - 9px) center;
+  padding: 15px 30px;
+}
+
+.input-group label {
+  margin-bottom: 4px;
+}
+
+.button-buy-now {
+  padding: 11px 0;
+  background-color: #37D997;
+  border: none;
+  border-radius: 15px;
+}
+
+.button-buy-now a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+#color-select,
+#size-select {
+  background-color: #fff;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+}
+
+.main-gallery-item {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.main-gallery-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.side-gallery-items {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 12px;
+}
+
+.side-gallery-items img {
+  cursor: pointer;
+  max-width: 22.5%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Gotham", sans-serif;
+}
+
+.flag {
+  width: 12px;
+  height: 12px;
+}/*# sourceMappingURL=main.css.map */

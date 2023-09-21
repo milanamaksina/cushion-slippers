@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cushion slippers</title>
+    <link rel="stylesheet" href="./style/main.css" />
+    <link
+      href="https://fonts.cdnfonts.com/css/gotham-6?styles=103309,103316"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <img src="./assets/flag.png" alt="flag" />
+      <span>SPECIAL OFFER + FREE DELIVERY 2-4 DAYS IN SA</span>
+      <img src="./assets/flag.png" alt="flag" />
+    </header>
+    <section class="main-section">
+      <div class="main-section-logo">
+        <img src="./assets/logo.png" alt="cushion" />
+        <p>orthopedic slippers</p>
+      </div>
+      <img
+        class="black-slippers"
+        src="/assets/mainBlackSlippers.png"
+        alt="black slippers"
+      />
+      <div class="chip timer-container">
+        <p>Limited offer</p>
+        <div class="timer chip-big-text">
+          <span id="hours">00</span>:<span id="minutes">00</span>:<span
+            id="seconds"
+            >00</span
+          >
+        </div>
+      </div>
+      <div class="chip price">
+        <div class="old-price">R 250.00
+          <div class="line"></div>
+        </div>
+        <p class="chip-big-text">R 250.00</p>
+      </div>
+    </section>
+    <section class="goods-section">
+      <div class="goods-valuation">
+        <span>Excellent 4.8/5</span>
+        <img src="./assets/trustpilot.svg" alt="trustpilot" />
+        <span class="goods-best-selling">best selling</span>
+      </div>
+      <p class="goods-name">Orthopedic Slippers</p>
+      <div class="container">
+        <div class="main-gallery-item">
+          <img src="./assets/blackSlippers.png" id="main-item" alt="img" />
+        </div>
+        <div class="side-gallery-items">
+          <img src="./assets/blackSlippers.png" onclick="change(this)" />
+          <img src="./assets/orangeSlippers.png" onclick="change(this)" />
+          <img src="./assets/pinkSlippers.png" onclick="change(this)" />
+          <img src="./assets/yellowSlippers.png" onclick="change(this)" />
+        </div>
+      </div>
+      <div class="goods-description">
+        <p>
+          <span class="goods-stock-delivery">Fast Delivery:</span> 2-4 days from
+          SA
+          <img class="flag" src="./assets/flag.png" alt="flag" />
+        </p>
+        <p>
+          <span class="goods-stock-delivery">In Stock:</span> Shipping from
+          Johannesburg
+          <img class="flag" src="./assets/flag.png" alt="flag" />
+        </p>
+        <div class="goods-rating">
+          <img src="./assets/star.svg" alt="star" />
+          <img src="./assets/star.svg" alt="star" />
+          <img src="./assets/star.svg" alt="star" />
+          <img src="./assets/star.svg" alt="star" />
+          <img src="./assets/star.svg" alt="star" />
+          <span class="goods-comments-count">(10)</span>
+        </div>
+      </div>
+      <div class="selection-size-color">
+        <div class="input-group">
+          <label for="color-select">color</label>
+          <select id="color-select">
+            <option>Black</option>
+            <option>Orange</option>
+            <option>Pink</option>
+            <option>Yellow</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label for="size-select">size</label>
+          <select id="size-select">
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+      </div>
+      <button class="button-buy-now">
+        <a href="">Buy now</a>
+      </button>
+    </section>
+    <script src="js/time-counter.js"></script>
+    <script type="text/javascript">
+      const change = (item) => {
+        const images = document.querySelectorAll(".side-gallery-items img");
+        images.forEach((image) => {
+          image.style.opacity = "1";
+        });
+        item.style.opacity = "0.4";
+        document.getElementById("main-item").src = item.src;
+      };
+    </script>
+  </body>
+</html>
